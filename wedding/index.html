@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alex & Jamie's Wedding</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <!-- Header with names -->
+  <header class="main-header">
     <h1>Katy & Benedict</h1>
-    <p>Are Getting Married!</p>
+    <p class="subtitle">We're getting married!</p>
+    <p class="date">August 18th, 2025</p>
   </header>
 
-  <section>
-    <h2>Wedding Details</h2>
-    <p><strong>Date:</strong> Saturday, September 14, 2025</p>
-    <p><strong>Time:</strong> Ceremony at 4:00 PM</p>
-    <p><strong>Location:</strong> Willow Creek Barn, 123 Country Lane, Vermont</p>
+  <!-- Hero image -->
+  <section class="hero-image">
+    <img
+    src="img/flowergarden.avif"
+    alt="Couple photo" />
   </section>
 
-  <section>
-    <h2>Schedule</h2>
-    <ul>
-      <li>4:00 PM – Ceremony</li>
-      <li>5:00 PM – Cocktail Hour</li>
-      <li>6:30 PM – Dinner & Reception</li>
-      <li>9:00 PM – Dancing</li>
-    </ul>
-  </section>
+  <!-- Main Content -->
+  <main class="content">
 
-  <section>
-    <h2>Dress Code</h2>
-    <p>Garden Formal — think summer suits, dresses, and dressy shoes (on grass).</p>
-  </section>
+    <section class="intro">
+      <h2>You're Invited</h2>
+      <p>Join us for a day full of love, laughter, and unforgettable memories.</p>
+    </section>
 
-  <section class="rsvp">
-    <h2>RSVP</h2>
-    <p>Please let us know if you can join us!</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnfkWn1KrlGPR0UxZaq9I3iUzh209YWXEs5hmmcR_6zlYQag/viewform?usp=dialog" target="_blank">RSVP Here</a>
-  </section>
+    <section class="details">
+      <h2>Wedding Details</h2>
+      <div class="info-cards">
+        <div class="card">
+          <h3>Date</h3>
+          <p>Saturday, September 14, 2025</p>
+        </div>
+        <div class="card">
+          <h3>Time</h3>
+          <p>Ceremony begins at 4:00 PM</p>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <p>Willow Creek Barn<br>123 Country Lane, Vermont</p>
 
-  <footer>
-    <p>We can’t wait to celebrate with you! 💕</p>
-  </footer>
+          <!-- Embedded Google Map -->
 
-</body>
-</html>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.3390255899144!2d-1.331417023368008!3d51.7999656392885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c59c57541363%3A0x66429de1413c9861!2sWorton%20Kitchen%20Garden!5e0!3m2!1sen!2suk!4v1743875073422!5m2!1sen!2suk"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="schedule">
+      <h2>Schedule</h2>
+      <ul>
+        <li><strong>4:00 PM</strong> – Ceremony</li>
+        <li><strong>5:00 PM</strong> – Cocktail Hour</li>
+        <li><strong>6:30 PM</strong> – Dinner & Reception</li>
+        <li><strong>9:00 PM</strong> – Dancing</li>
+      </ul>
+    </section>
+
+    <section class="schedule">
+      <h2>Dress Code</h2>
+      <p> Please wear </p>
+    </section>
+
+    <section class="rsvp fade-in">
+      <h2>RSVP</h2>
+      <p>We hope you can join us on our special day.</p>
+      <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdnfkWn1KrlGPR0UxZaq9I3iUzh209YWXEs5hmmcR_6zlYQag/viewform?usp=dialog"
+      target="_blank"
+      class="btn">RSVP Here
+    </a>
+    </section>
+
+    <!-- <footer class="center fade-in">
+      <p>We can’t wait to celebrate with you! 💕</p>
+    </footer> -->
