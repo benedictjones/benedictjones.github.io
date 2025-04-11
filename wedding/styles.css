@@ -243,3 +243,24 @@ footer {
   max-height: 1000px; /* Adjust if your content is taller */
   opacity: 1;
 }
+
+#start-button {
+  background: linear-gradient(135deg, #f6d4e7, #fbe9f2);
+  color: #8e3a59;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: 2rem auto;
+  display: block;
+}
+
+#start-button:hover {
+  background: linear-gradient(135deg, #fdd1ea, #ffddee);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 192, 203, 0.6);
+}
