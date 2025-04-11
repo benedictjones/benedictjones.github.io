@@ -54,23 +54,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const audio = document.getElementById('bg-music');
+
+//   // Wait 20 seconds before starting
+//   setTimeout(() => {
+//     audio.volume = 0;
+//     audio.play();
+
+//     // Fade in over 5 seconds
+//     let vol = 0;
+//     const fadeIn = setInterval(() => {
+//       if (vol < 1) {
+//         vol += 0.02;
+//         audio.volume = Math.min(vol, 1);
+//       } else {
+//         clearInterval(fadeIn);
+//       }
+//     }, 100); // every 100ms
+//   }, 20000); // 20 seconds
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
+  const button = document.getElementById('start-button');
+  const content = document.getElementById('wedding-content');
   const audio = document.getElementById('bg-music');
 
-  // Wait 20 seconds before starting
-  setTimeout(() => {
-    audio.volume = 0;
-    audio.play();
+  button.addEventListener('click', () => {
+    // Hide the button
+    button.style.display = 'none';
 
-    // Fade in over 5 seconds
-    let vol = 0;
-    const fadeIn = setInterval(() => {
-      if (vol < 1) {
-        vol += 0.02;
-        audio.volume = Math.min(vol, 1);
-      } else {
-        clearInterval(fadeIn);
-      }
-    }, 100); // every 100ms
-  }, 20000); // 20 seconds
+    // Show the content
+    content.classList.add('show');
+
+    // Wait 5 seconds, then play music and fade in volume
+    setTimeout(() => {
+      audio.volume = 0;
+      audio.play().then(() => {
+        let vol = 0;
+        const fadeIn = setInterval(() => {
+          if (vol < 1) {
+            vol += 0.02;
+            audio.volume = Math.min(vol, 1);
+          } else {
+            clearInterval(fadeIn);
+          }
+        }, 100); // fade over 5s
+      }).catch((err) => {
+        console.warn("Autoplay might be blocked until user interacts.");
+      });
+    }, 5000); // 5 seconds
+  });
 });

@@ -230,3 +230,16 @@ footer {
 .carousel.dragging .carousel-track {
   animation-play-state: paused;
 }
+
+
+#wedding-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease-out, opacity 1s ease-in;
+}
+
+#wedding-content.show {
+  max-height: 1000px; /* Adjust if your content is taller */
+  opacity: 1;
+}
