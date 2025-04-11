@@ -163,7 +163,7 @@ footer {
 
 .carousel-track {
   display: flex;
-  animation: scroll 50s linear infinite;
+  animation: scroll 40s linear infinite;
   gap: 2em; /* space between cards */
   /* padding: 1em 0; */
   /* height: 200px;  */
@@ -201,7 +201,7 @@ footer {
 /* Scrolling animation */
 @keyframes scroll {
   0%   { transform: translateX(0); }
-  90%  { transform: translateX(-90%); }
+  90%  { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
 
@@ -218,7 +218,7 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-    
+
 .carousel:hover .carousel-track {
   animation-play-state: paused;
 }
