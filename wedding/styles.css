@@ -163,7 +163,7 @@ footer {
 
 .carousel-track {
   display: flex;
-  animation: scroll 50s linear infinite;
+  animation: scroll 40s linear infinite;
   gap: 2em; /* space between cards */
   /* padding: 1em 0; */
   /* height: 200px;  */
@@ -201,7 +201,7 @@ footer {
 /* Scrolling animation */
 @keyframes scroll {
   0%   { transform: translateX(0); }
-  90%  { transform: translateX(-90%); }
+  90%  { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
 
@@ -218,7 +218,7 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-    
+
 .carousel:hover .carousel-track {
   animation-play-state: paused;
 }
@@ -229,4 +229,38 @@ footer {
 
 .carousel.dragging .carousel-track {
   animation-play-state: paused;
+}
+
+
+#wedding-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease-out, opacity 1s ease-in;
+}
+
+#wedding-content.show {
+  max-height: 1000px; /* Adjust if your content is taller */
+  opacity: 1;
+}
+
+#start-button {
+  background: linear-gradient(135deg, #f6d4e7, #fbe9f2);
+  color: #8e3a59;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: 2rem auto;
+  display: block;
+}
+
+#start-button:hover {
+  background: linear-gradient(135deg, #fdd1ea, #ffddee);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 192, 203, 0.6);
 }
