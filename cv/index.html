@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My CV</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- For Icons in Contacts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="outer-panel">
+    <header class="header">
+      <img 
+        src="img/pic.jpg"
+        alt="Your Photo" 
+        class="profile-pic" 
+      />
+      <h1 class="name">Benedict Jones</h1>
+    </header>
+
+    <main class="grid-container">
+      <section class="left-column">
+
+        <div class="panel">
+          <h2>Summary</h2>
+          <p>Brief professional summary goes here...</p>
+        </div>
+
+        <div class="panel">
+          <h2>Skills</h2>
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span class="skill">Python</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">C++</span>
+            </div>
+          </div>
+        
+          <div class="skill-group">
+            <h3>Tools & Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill">Pandas</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Git</span>
+            </div>
+          </div>
+        
+          <div class="skill-group">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill">Team Leadership</span>
+              <span class="skill">Communication</span>
+              <span class="skill">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel contact-panel">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <!-- <li><i class="fas fa-envelope"></i> <a href="mailto:you@example.com">you@example.com</a></li> -->
+            <!-- <li><i class="fas fa-phone"></i> <a href="tel:+441234567890">+44 1234 567890</a></li> -->
+            <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/YyMZnZr1yChJEiXD7">Newcastle upon Tyne</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/benedict-jones-9b5b98145/">LinkedIn</a></li>
+            <!-- <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/yourhandle">Twitter</a></li> -->
+            <li><i class="fab fa-github"></i> <a href="https://github.com/benedictjones">GitHub</a></li>
+          </ul>
+        </div>
+        
+        <div class="panel packages-panel">
+          <h2>Open Source Packages</h2>
+          <ul class="package-list">
+            <li>
+              <a href="https://pypi.org/project/pyeas/" target="_blank">
+                pyeas
+              </a>
+              <p class="package-desc">Python library implementing some Evolutionary Algorithms.</p>
+            </li>
+          </ul>
+        </div>
+        
+
+      </section>
+
+
+
+      <section class="right-column">
+        
+        <div class="panel work-panel">
+          <h2>Work Experience</h2>
+        
+          <div class="job">
+            <h3 class="job-title">Senior Data Scientist</h3>
+            <div class="job-meta">
+              <span class="company">TechCorp Ltd</span> ·
+              <span class="date">Jan 2022 – Present</span>
+            </div>
+            <ul class="job-description">
+              <li>Led a team of 4 on building ML pipelines for customer churn prediction.</li>
+              <li>Deployed models using Docker and AWS Lambda for real-time inference.</li>
+              <li>Collaborated with product to increase revenue by 12% via A/B testing.</li>
+            </ul>
+          </div>
+        
+          <div class="job">
+            <h3 class="job-title">Data Analyst</h3>
+            <div class="job-meta">
+              <span class="company">InsightWorks</span> ·
+              <span class="date">Sep 2019 – Dec 2021</span>
+            </div>
+            <ul class="job-description">
+              <li>Analyzed large-scale user behavior data to identify key engagement metrics.</li>
+              <li>Created dashboards and reports using Tableau and SQL.</li>
+              <li>Automated monthly reporting workflows, reducing effort by 40%.</li>
+            </ul>
+          </div>
+        </div>
+        
+
+        <div class="panel education-panel">
+          <h2>Education</h2>
+        
+          <div class="education-entry">
+            <h3 class="qualification">MSc in Data Science</h3>
+            <div class="education-meta">
+              <span class="institution">University of Oxford</span> ·
+              <span class="date">2018 – 2019</span>
+            </div>
+            <p class="grade">Distinction (Top 5%)</p>
+          </div>
+        
+          <div class="education-entry">
+            <h3 class="qualification">BSc in Computer Science</h3>
+            <div class="education-meta">
+              <span class="institution">University of Manchester</span> ·
+              <span class="date">2015 – 2018</span>
+            </div>
+            <p class="grade">First Class Honours</p>
+          </div>
+        </div>
+        
+
+        <div class="panel publications-panel">
+          <h2>
+            Publications
+            <a href="https://orcid.org/0000-0002-1924-0560" target="_blank" class="orcid-link">
+              <img
+                src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                alt="ORCID"
+                class="orcid-icon"
+              />
+            </a>
+            
+          </h2>
+        
+          <ul class="publication-list">
+
+
+            <li>
+              <a href="http://etheses.dur.ac.uk/15119/" target="_blank">
+                <h3 class="publication-title">Harnessing Evolution in-Materio as an Unconventional Computing Resource</h3>
+                <div class="publication-meta">
+                  <span class="journal">Doctoral thesis, Durham University</span> ·
+                  <span class="date">Mar 31, 2023</span>
+                </div>
+                <i>
+                  Jones, Benedict (2023) Harnessing Evolution in-Materio as an Unconventional Computing Resource. Doctoral thesis, Durham University.
+                </i>
+              </a>              
+            </li>
+
+            <li>
+              <a href="https://doi.org/10.1007/978-3-031-14714-2_35" target="_blank">
+                <h3 class="publication-title">In-Materio Extreme Learning Machines</h3>
+                <div class="publication-meta">
+                  <span class="journal">International Conference on Parallel Problem Solving from Nature (PPSN)</span> ·
+                  <span class="date">Aug 14, 2022</span>
+                </div>
+                <i>
+                  Jones, B.A.H., Al Moubayed, N., Zeze, D.A., Groves, C. (2022). In-Materio Extreme Learning Machines. In: Rudolph, G., Kononova, A.V., Aguirre, H., Kerschke, P., Ochoa, G., Tušar, T. (eds) Parallel Problem Solving from Nature - PPSN XVII. PPSN 2022. Lecture Notes in Computer Science, vol 13398. Springer, Cham. https://doi.org/10.1007/978-3-031-14714-2_35
+                </i>
+              </a>              
+            </li>
+
+            <li>
+              <a href="https://doi.org/10.1162/evco_a_00309" target="_blank">
+                <h3 class="publication-title">Towards Intelligently Designed Evolvable Processors</h3>
+                <div class="publication-meta">
+                  <span class="journal">MIT Evolutionary Computation (ECJ)</span> ·
+                  <span class="date">Mar 15, 2022</span>
+                </div>
+                <i>
+                  Benedict A. H. Jones, John L. P. Chouard, Bianca C. C. Branco, Eléonore G. B. Vissol-Gaudin, Christopher Pearson, Michael C. Petty, Noura Al Moubayed, Dagou A. Zeze, Chris Groves; Towards Intelligently Designed Evolvable Processors. Evol Comput 2022; 30 (4): 479-501. doi: https://doi.org/10.1162/evco_a_00309
+                </i>
+              </a>              
+            </li>
+          
+            <li>
+              <a href="https://t.co/PrBpv9iMXV" target="_blank">
+                <h3 class="publication-title">Enhanced methods for Evolution in-Materio Processors</h3>
+                <div class="publication-meta">
+                  <span class="journal">2021 International Conference on Rebooting Computing (ICRC)</span> ·
+                  <span class="date">Nov 30, 2021</span>
+                </div>
+                <i>
+                  B. A. H. Jones, N. Al Moubayed, D. A. Zeze and C. Groves, "Enhanced methods for Evolution in-Materio Processors," 2021 International Conference on Rebooting Computing (ICRC), Los Alamitos, CA, USA, 2021, pp. 109-118, doi: 10.1109/ICRC53822.2021.00026.
+                </i>
+              </a>              
+            </li>
+
+            
+
+          </ul>
+        </div>
+        
+
+        <div class="panel publications-panel">
+          <h2>Conferences</h2>
+
+          <ul class="publication-list">
+          
+          <li>
+            <h3 class="publication-title">SEVENTEENTH INTERNATIONAL CONFERENCE ON PARALLEL PROBLEM SOLVING FROM NATURE (PPSN)</h3>
+            <div class="publication-meta">
+              <!-- <span class="journal">Doctoral thesis, Durham University</span> · -->
+              <span class="date">2022</span>
+            </div>
+          </li>
+
+          <li>
+            <h3 class="publication-title">SIXTH IEEE INTERNATIONAL CONFERENCE ON REBOOTING COMPUTING (ICRC)</h3>
+            <div class="publication-meta">
+              <!-- <span class="journal">Doctoral thesis, Durham University</span> · -->
+              <span class="date">2021</span>
+            </div>
+          </li>
+        </ul>
+        </div>
+
+        <div class="panel research-panel">
+          <h2>Research Interests</h2>
+        
+          <div class="research-interest">
+            <h3 class="interest-title">Machine Learning Interpretability</h3>
+            <p>
+              Exploring methods to make complex ML models more transparent and explainable,
+              including SHAP values, counterfactuals, and interpretable surrogates for black-box systems.
+            </p>
+          </div>
+        
+          <div class="research-interest">
+            <h3 class="interest-title">Time Series Forecasting</h3>
+            <p>
+              Developing models for irregular, multivariate time series data using deep learning approaches such as
+              transformers and temporal convolutional networks, with applications in finance and healthcare.
+            </p>
+          </div>
+        
+          <div class="research-interest">
+            <h3 class="interest-title">AI for Scientific Discovery</h3>
+            <p>
+              Using machine learning to assist in hypothesis generation and simulation for complex systems,
+              especially in physical sciences and computational biology.
+            </p>
+          </div>
+        </div>
+        
+
+      </section>
+
+    </main>
+
+  </div>
+</body>
+</html>
