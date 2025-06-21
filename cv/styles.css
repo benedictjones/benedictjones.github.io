@@ -6,7 +6,7 @@ body {
 }
 
 .outer-panel {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 40px auto;
   background-color: white;
   border-radius: 12px;
@@ -95,12 +95,33 @@ ul {
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
+  line-height: 15px;
 }
 
 .skill {
   background-color: #e0f0ff;
   color: #004080;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.skill-familiar {
+  background-color: #f3ffbd;
+  color: #396903;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.skill-basic {
+  background-color: #ffeabd;
+  color: #805700;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -164,8 +185,8 @@ ul {
 }
 
 .job-description li {
-  margin-bottom: 6px;
-  line-height: 1.4;
+  margin-bottom: 5px;
+  line-height: 1em;
 }
 
 /* Education */
