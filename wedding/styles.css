@@ -79,6 +79,15 @@ h1, h2, h3 {
   flex: 1 1 250px;
 }
 
+.card-small {
+  background: #fff;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  padding: 1.5em;
+  flex: 1 1 250px;
+}
+
 /* Schedule */
 .schedule ul {
   list-style: none;
