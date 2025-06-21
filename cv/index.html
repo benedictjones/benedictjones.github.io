@@ -15,6 +15,8 @@
 
 <body>
   <div class="outer-panel">
+
+
     <header class="header">
       <img 
         src="img/pic.jpg"
@@ -22,19 +24,24 @@
         class="profile-pic" 
       />
       <h1 class="name">Benedict Jones</h1>
+      <p class="summary">
+        Benedict is a Senior Data Scientist at Evergreen Life, focusing on leveraging machine learning to improve the health and wellbeing in the UK.
+        Benedict has a background in Engineering, graduating with an MEng in 2019.
+        Following this he went on to complete a PhD at the Department of Engineering at Durham University with a research focuses on Unconventional Computing. 
+      </p>
     </header>
 
     <main class="grid-container">
       <section class="left-column">
 
-        <div class="panel">
+        <!-- <div class="panel">
           <h2>Summary</h2>
           <p>
             Benedict is a Senior Data Scientist at Evergreen Life, focusing on leveraging machine learning to improve the health and wellbeing in the UK.
             Benedict has a background in Engineering, graduating with an MEng in 2019.
             Following this he went on to complete a PhD at the Department of Engineering at Durham University with a research focuses on Unconventional Computing. 
           </p>
-        </div>
+        </div> -->
 
         <div class="panel">
           <h2>Skills</h2>
@@ -330,11 +337,20 @@
 
         <div class="panel research-panel">
           <h2>Research Interests</h2>
-        
+          
+          <div class="research-interest">
+            <h3 class="interest-title">Electronic Health Records</h3>
+            <p>
+              Using longitudinal health records to predict negative outcomes.
+              AI explainability techniques mean can then begin to understand what factors and preventative measures contribute to better future health.
+
+            </p>
+          </div>
+
           <div class="research-interest">
             <h3 class="interest-title">Machine Learning Interpretability</h3>
             <p>
-              Exploring methods to make complex ML models more transparent and explainable,
+              Exploring methods (a.k.a 'AI explainability') to make complex ML models more transparent and explainable,
               including SHAP values.
 
             </p>
