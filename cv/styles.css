@@ -200,6 +200,16 @@ ul {
   margin-bottom: 10px;
 }
 
+.job-meta a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.job-meta a:hover {
+  text-decoration: underline;
+}
+
 .company {
   font-weight: 600;
 }
@@ -217,6 +227,18 @@ ul {
   margin-bottom: 5px;
   line-height: 1em;
 }
+
+.job-description a {
+  /* font-weight: 600; */
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.job-description a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Education */
 .education-panel .education-entry {
@@ -276,6 +298,11 @@ ul {
 
 .publication-list a:hover {
   text-decoration: underline;
+}
+
+.publication-list strong {
+  text-decoration: none;
+  color: #2c3e50c7;
 }
 
 .publication-title {
