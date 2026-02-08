@@ -203,7 +203,7 @@ ul {
 .job-meta a {
   font-weight: 600;
   text-decoration: none;
-  color: #2c3e50;
+  color: #444;
 }
 
 .job-meta a:hover {
@@ -257,6 +257,17 @@ ul {
   margin-bottom: 5px;
 }
 
+.education-meta a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #444;
+}
+
+.education-meta a:hover {
+  text-decoration: underline;
+}
+
+
 .institution {
   font-weight: 600;
 }
@@ -292,8 +303,10 @@ ul {
 }
 
 .publication-list a {
+  font-weight: 600;
   text-decoration: none;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: #666;
 }
 
 .publication-list a:hover {
